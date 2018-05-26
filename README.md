@@ -17,20 +17,21 @@ David Joel Aldarondo, 50177475, daldaron@uci.edu
 	We will partition the data we receive from class and use cross validation to train our model. Our model’s performance will be evaluated based on its predictive accuracy, i.e. whether it correctly identifies joints, even when they are occluded.
 6. Software
 	Based on what other students have suggested, we may use and modify the ResNet framework to build a CNN to estimate hand poses. However, should it not suit our needs, we will instead build our own network using the PyTorch framework initially. We may branch out to Keras or TensorFlow should they suit our needs better.
-7.  Individual Student Responsibilities
+
+Individual Student Responsibilities
 Christian Shenk: 
-Implementing the CNN’s framework. 
-Generating data should we decide to use video.
+* Implementing the CNN’s framework. 
+* Generating data should we decide to use video.
 Eduardo Corona: 
-Implementing the CNN’s framework. 
-Tune hyperparameters.
-Convert CNN to CoreML format if time allows
-Generating data should we decide to use video
-David Aldarondo: Has the most powerful computer
- Train model 
-implement the cross validation algorithm
-Tune hyperparameters. 
-Generate data should we decide to use video
+* Implementing the CNN’s framework. 
+* Tune hyperparameters.
+* Convert CNN to CoreML format if time allows
+* Generating data should we decide to use video
+David Aldarondo: 
+* Train model 
+* Implement the cross validation algorithm
+* Tune hyperparameters. 
+* Generate data should we decide to use video
 
 
 
