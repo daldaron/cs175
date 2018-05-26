@@ -23,6 +23,7 @@ colors = [
 		[150.,    0.,  150.],
 		[200.,    0.,  200.],
 		[255.,    0.,  255.]]
+
 def draw_hand(canvas, joint, numclass =22, with_number = False, Edge = True):
 	hand_map = [[0, 1],[1 , 2],[2 , 3],[3 , 4],
 				[0, 5],[5 , 6],[6 , 7],[7 , 8],
@@ -77,7 +78,7 @@ def main():
 		# name = "032_2105_L"
 		# print name
 		# name = "AM_49827197_41_R"
-		canvas = cv2.imread("./Images/" + name[:-2] + ".jpg")
+		canvas = cv2.imread("Dataset/Images/" + name[:-2] + ".jpg")
 		tmp = []
 		print name
 		for i in xrange(len(Joints[name])):
