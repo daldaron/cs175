@@ -35,3 +35,17 @@ David Aldarondo:
 
 
 
+
+
+
+Paper (potentially) used:
+
+https://arxiv.org/pdf/1406.2984.pdf
+
+Architecture of model: 
+3 stages
+Conv -> ReLU -> Pool -> Fully Connected
+
+Uses MRF loopy belief propagation. May have to look into that. 
+
+
