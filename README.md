@@ -34,4 +34,11 @@ David Aldarondo:
 * Generate data should we decide to use video
 
 
+Paper potentially used:
+https://arxiv.org/pdf/1406.2984.pdf
+
+Model's architecture:
+conv -> ReLU -> pool -> fully connected
+
+May have to look into loopy belief propagation
 
