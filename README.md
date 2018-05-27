@@ -1,7 +1,8 @@
+
 # cs175
-Project Proposal for CS 175, Spring 2018
-Project Title: Hand Pose Estimation
-List of Team Members:
+### Project Proposal for CS 175, Spring 2018
+#### Project Title: Hand Pose Estimation
+#### List of Team Members:
 Christian Shenk, 17803342, cshenk@uci.edu
 Jose Eduardo Corona Espinoza, 55984012, coronaje@uci.edu
 David Joel Aldarondo, 50177475, daldaron@uci.edu
@@ -18,7 +19,7 @@ David Joel Aldarondo, 50177475, daldaron@uci.edu
 6. Software
 	Based on what other students have suggested, we may use and modify the ResNet framework to build a CNN to estimate hand poses. However, should it not suit our needs, we will instead build our own network using the PyTorch framework initially. We may branch out to Keras or TensorFlow should they suit our needs better.
 
-Individual Student Responsibilities
+## Individual Student Responsibilities
 Christian Shenk:
 * Implementing the CNN’s framework.
 * Generating data should we decide to use video.
@@ -37,8 +38,8 @@ David Aldarondo:
 * Generate data should we decide to use video
 
 
-Literature:
-https://arxiv.org/pdf/1406.2984.pdf
+## Literature
+* https://arxiv.org/pdf/1406.2984.pdf
 * Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh, Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields, CVPR, 2017.
 * Leonid Pishchulin, Eldar Insafutdinov, Siyu Tang, Bjoern Andres, Mykhaylo Andriluka, Peter Gehler, and Bernt Schiele, Deepcut: Joint subset partition and labeling for multi person pose estimation, CVPR, 2016.
 * Shih-En Wei, Varun Ramakrishna, Takeo Kanade, and Yaser Sheikh, Convolutional pose machines, CVPR, 2016.
@@ -47,5 +48,17 @@ https://arxiv.org/pdf/1406.2984.pdf
 * Jonathan J. Tompson, Arjun Jain, Yann LeCun, Christoph Bregler, Joint training of a convolutional network and a graphical model for human pose estimation, NIPS, 2014.
 
 
-Possible ideas to implement:
-loopy belief propagation
+## Possible ideas to implement:
+* loopy belief propagation
+* Live CoreML model
+
+## Final Architecture
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
+
