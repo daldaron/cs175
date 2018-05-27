@@ -1,5 +1,4 @@
 
-# cs175
 ### Project Proposal for CS 175, Spring 2018
 #### Project Title: Hand Pose Estimation
 #### List of Team Members:
@@ -54,11 +53,4 @@ David Aldarondo:
 
 ## Final Architecture
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
 
