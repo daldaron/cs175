@@ -6,7 +6,7 @@ Christian Shenk, 17803342, cshenk@uci.edu
 Jose Eduardo Corona Espinoza, 55984012, coronaje@uci.edu
 David Joel Aldarondo, 50177475, daldaron@uci.edu
 1. Project Summary
-	This project will utilize a convolutional neural network to estimate the locations of joints of a hand within an image. The annotation data gathered in class will function as both our training and test data. We will evaluate our model based on its classification accuracy. 
+	This project will utilize a convolutional neural network to estimate the locations of joints of a hand within an image. The annotation data gathered in class will function as both our training and test data. We will evaluate our model based on its classification accuracy.
 2. Problem Definition
 	Our goal to take a still image or a sequence of still images, and, time permitting, video of hands, and estimate the location of joints of those hands. Specifically, our network would take a still image of a hand as input, then reproduce the photo with nodes representing joints, and with lines between those nodes representing the connecting bones. While the stated goal seems simple, factors like hand occlusion and blurring complicate prediction and training, as it would be difficult for the model to make a guess as to where the joints are.
 3. Proposed Technical Approach
@@ -19,18 +19,21 @@ David Joel Aldarondo, 50177475, daldaron@uci.edu
 	Based on what other students have suggested, we may use and modify the ResNet framework to build a CNN to estimate hand poses. However, should it not suit our needs, we will instead build our own network using the PyTorch framework initially. We may branch out to Keras or TensorFlow should they suit our needs better.
 
 Individual Student Responsibilities
-Christian Shenk: 
-* Implementing the CNN’s framework. 
+Christian Shenk:
+* Implementing the CNN’s framework.
 * Generating data should we decide to use video.
-Eduardo Corona: 
-* Implementing the CNN’s framework. 
+
+Eduardo Corona:
+* Write DataLoader Class
+* Implementing the CNN’s framework.
 * Tune hyperparameters.
 * Convert CNN to CoreML format if time allows
 * Generating data should we decide to use video
-David Aldarondo: 
-* Train model 
+
+David Aldarondo:
+* Train model
 * Implement the cross validation algorithm
-* Tune hyperparameters. 
+* Tune hyperparameters.
 * Generate data should we decide to use video
 
 
@@ -41,4 +44,3 @@ Model's architecture:
 conv -> ReLU -> pool -> fully connected
 
 May have to look into loopy belief propagation
-
