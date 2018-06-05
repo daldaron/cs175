@@ -37,6 +37,16 @@ David Aldarondo:
 * Generate data should we decide to use video
 
 
+## Libraries
+* https://github.com/CMU-Perceptual-Computing-Lab/openpose
+* https://github.com/youansheng/pytorch-cv
+* https://github.com/CVBox/PyTorchCV
+* https://github.com/bearpaw/pytorch-pose
+* https://github.com/tensorboy/pytorch_Realtime_Multi-Person_Pose_Estimation
+* https://github.com/xinghaochen/awesome-hand-pose-estimation
+* https://github.com/moberweger/deep-prior-pp
+* https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation
+
 ## Literature
 * https://arxiv.org/pdf/1406.2984.pdf
 * Zhe Cao, Tomas Simon, Shih-En Wei, and Yaser Sheikh, Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields, CVPR, 2017.
@@ -51,6 +61,7 @@ David Aldarondo:
 * loopy belief propagation
 * Live CoreML model
 
+## More Data
+* http://icvl.ee.ic.ac.uk/hands17/challenge/
+
 ## Final Architecture
-
-

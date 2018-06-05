@@ -2,7 +2,7 @@ import json
 import cv2, random
 import matplotlib.pyplot as plt
 colors = [
-		[100.,  100.,  100.], 
+		[100.,  100.,  100.],
 		[100.,    0.,    0.],
 		[150.,    0.,    0.],
 		[200.,    0.,    0.],
@@ -37,12 +37,44 @@ def draw_hand(canvas, joint, numclass =22, with_number = False, Edge = True):
 		cv2.circle(canvas, tuple(joint[i][:2]), 4, colors[i], thickness=-1)
 		if with_number:
 			cv2.putText(canvas,str(i),tuple(joint[i][:2]),font,1,colors[i],1)
-	if Edge:	
+	if Edge:
 		for edge in hand_map:
 			u,v = edge
 			if joint[u] == -1 or joint[v] == -1:
 				continue
 			cv2.line(canvas,tuple(joint[u][:2]),tuple(joint[v][:2]),colors[v],3)
+	return canvas
+
+def draw_hand_rescaled(canvas, joint, rescale=None, numclass=22, with_number=False, Edge=True):
+	"""
+	Added rescaling capabilities
+	"""
+	hand_map = [[0, 1],[1 , 2],[2 , 3],[3 , 4],
+				[0, 5],[5 , 6],[6 , 7],[7 , 8],
+				[0, 9],[9 ,10],[10,11],[11,12],
+				[0,13],[13,14],[14,15],[15,16],
+				[0,17],[17,18],[18,19],[19,20]]
+	font = cv2.FONT_HERSHEY_SIMPLEX
+	for i in range(len(joint)):
+		if joint[i] == -1 :
+			continue
+
+		J_tuple = tuple([i//rescale for j in joint[i][:2]])
+
+
+		cv2.circle(canvas, J_tuple, 4, colors[i], thickness=-1)
+		if with_number:
+			cv2.putText(canvas, str(i), J_tuple, font, 1, colors[i],1)
+	if Edge:
+		for edge in hand_map:
+			u,v = edge
+			if joint[u] == -1 or joint[v] == -1:
+				continue
+
+			J_tuple_u = tuple([i//rescale for j in joint[u][:2]])
+			J_tuple_v = tuple([i//rescale for j in joint[v][:2]])
+
+			cv2.line(canvas, J_tuple_u, J_tuple_v, colors[v],3)
 	return canvas
 
 def cmp(a, b):
@@ -91,7 +123,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
-
-
-	
