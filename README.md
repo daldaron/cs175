@@ -55,7 +55,7 @@ David Aldarondo:
 * Alejandro Newell, Kaiyu Yang, and Jia Deng, Stacked hourglass networks for human pose estimation, ECCV, 2016.
 * Tomas Pfister, James Charles, and Andrew Zisserman, Flowing convnets for human pose estimation in videos, ICCV, 2015.
 * Jonathan J. Tompson, Arjun Jain, Yann LeCun, Christoph Bregler, Joint training of a convolutional network and a graphical model for human pose estimation, NIPS, 2014.
-
+* https://github.com/fmfn/BayesianOptimization
 
 ## Possible ideas to implement:
 * loopy belief propagation
