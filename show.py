@@ -86,17 +86,10 @@ def cmp(a, b):
 def main():
 	Joints = json.load(open("Dataset/annotation.json","r"))
 	names = Joints.keys()
-	print names
 	random.shuffle(names)
 	LeftJoints = {}
 	RightJoints = {}
-	for name in Joints:
-		# print name
-		for pos in Joints[name]:
-			if pos == -1:
-				continue
-			if int(pos[0]) == 10 and int(pos[1]) == 10:
-				print name
+
 	for name in Joints:
 		if name[-1] == 'L':
 			LeftJoints[name[:-2]] = Joints[name]
@@ -112,8 +105,8 @@ def main():
 		# name = "AM_49827197_41_R"
 		canvas = cv2.imread("Dataset/Images/" + name[:-2] + ".jpg")
 		tmp = []
-		print name
-		for i in xrange(len(Joints[name])):
+		# print name
+		for i in range(len(Joints[name])):
 			tmp.append([int(Joints[name][i][0]), int(Joints[name][i][1])])
 		# print tmp
 		canvas = draw_hand(canvas, tmp)
