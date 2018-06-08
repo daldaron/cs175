@@ -32,16 +32,14 @@ def draw_hand(canvas, joint, numclass =22, with_number = False, Edge = True):
 				[0,17],[17,18],[18,19],[19,20]]
 	font = cv2.FONT_HERSHEY_SIMPLEX
 	for i in range(len(joint)):
-		if joint[i] == -1 :
-			continue
 		cv2.circle(canvas, tuple(joint[i][:2]), 2, colors[i], thickness=-1)
 		if with_number:
 			cv2.putText(canvas,str(i),tuple(joint[i][:2]),font,1,colors[i],thickness=.01)
 	if Edge:
 		for edge in hand_map:
 			u,v = edge
-			if joint[u] == -1 or joint[v] == -1:
-				continue
+			#if joint[u] == -1 or joint[v] == -1:
+			#	continue
 			cv2.line(canvas,tuple(joint[u][:2]),tuple(joint[v][:2]),colors[v], 1)
 	return canvas
 
