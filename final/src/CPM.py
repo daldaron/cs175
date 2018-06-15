@@ -23,6 +23,7 @@ class ConvolutionalPoseEstimator(nn.Module):
         self.conv7_1 = nn.Conv2d(512, N_keypoints + 1, kernel_size=1)
         self.pool_center = nn.AvgPool2d(kernel_size=9, stride=8, padding=1)
         
+        # Stage 2
         self.conv1_2 = nn.Conv2d(3, 128, kernel_size=9, padding=4)
         self.pool1_2 = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
         self.conv2_2 = nn.Conv2d(128, 128, kernel_size=9, padding=4)

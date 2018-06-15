@@ -21,16 +21,6 @@ import json,cv2
 import show
 
 
-
-
-
-
-
-
-
-
-
-
 class PoseEstimator(nn.Module):
     def __init__(self, pretrained_conv):
         super(PoseEstimator, self).__init__()
