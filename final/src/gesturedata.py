@@ -35,7 +35,7 @@ class HandGestureDataset(torch.utils.data.Dataset):
                 on a sample.
         """
         self.root_dir = root_dir
-        self.joints = json.load(open(self.root_dir+"scaled_annotations.json","r"))
+        self.joints = json.load(open(self.root_dir+"reduced_annotations.json","r"))
         self.names = list(self.joints)
         self.norm = T.Compose([
             T.ToTensor(),
