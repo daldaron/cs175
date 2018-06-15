@@ -21,12 +21,6 @@ import json,cv2
 import show
 
 
-# Ignore warnings
-import warnings
-warnings.filterwarnings("ignore")
-
-
-
 
 
 

@@ -25,20 +25,10 @@ plt.rcParams['image.cmap'] = 'gray'
 import timeit, random
 import json,cv2
 import show
-
-%load_ext autoreload
-%autoreload 2
-
 # Ignore warnings
 import warnings
 warnings.filterwarnings("ignore")
-
 plt.ion()   # interactive mode
-
-
-
-
-
 
 
 def train(model, loss_fn, optimizer, loader_train, loader_val=None, num_epochs=1):

@@ -1,6 +1,5 @@
 import os
 import numpy as np
-
 import torch
 import torchvision.datasets as dset
 import torch.nn as nn
@@ -14,18 +13,6 @@ from torch.autograd import Variable
 from torch.utils.data import sampler
 import torch.nn.functional as F
 from skimage import io, transform
-
-
-import timeit, random
-
-
-
-# Ignore warnings
-import warnings
-warnings.filterwarnings("ignore")
-
-
-
 
 
 

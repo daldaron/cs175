@@ -1,4 +1,3 @@
-
 import os
 import numpy as np
 import transformations
@@ -18,26 +17,9 @@ from skimage import io, transform
 
 
 
-import timeit, random
+import random
 import json,cv2
 import show
-
-
-
-# Ignore warnings
-import warnings
-warnings.filterwarnings("ignore")
-
-
-
-
-
-
-
-
-
-
-
 
 
 
