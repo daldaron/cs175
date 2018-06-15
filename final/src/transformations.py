@@ -12,6 +12,7 @@ import math
 from torch.autograd import Variable
 from torch.utils.data import sampler
 import torch.nn.functional as F
+import random
 from skimage import io, transform
 
 
